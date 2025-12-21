@@ -1,6 +1,7 @@
 body{
     background-color: #ffdae9;
-    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-image: radial-gradient(#ffb6c1 4px, transparent 3px);
+    background-size: 30px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
