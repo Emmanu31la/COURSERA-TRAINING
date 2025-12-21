@@ -1,0 +1,25 @@
+body{
+    background-color: #ffdae9;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clock-container{
+    background-color: #ff1493;
+    padding: 3rem 4rem;
+    border-radius: 50px;
+    box-shadow: 0 15px 35px rgba(90, 14, 61, 0.4);
+    border: 8px solid white;
+}
+
+#clock-display {
+    color: white;
+    font-size: 7rem; 
+    font-weight: bold; /*1rem = 16px.makes your clock more accessible for people who change their browser's default text size!*/
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
