@@ -1,8 +1,18 @@
 let isMuted = false;
+let is2Hour = true; //Default Time Format
+
 const muteBtn = document.getElementById("mute-btn");
+const formatBtn = document.getElementById("format-btn");
+
+
 muteBtn.addEventListener("click", () => {
     isMuted = !isMuted;
-    muteBtn.innerText = isMuted ? "🔇 Muted" : "🔊 Soung On";
+    muteBtn.innerText = isMuted ? "🔇 Muted" : "🔊 Sound On";
+});
+
+formatBtn.addEventListener("click", () => {
+    is2Hour = !is2Hour;
+    formatBtn.innerText = is2Hour ? "Switch to 12H Format" : "Switch to 24H Format";
 });
 
 function updateClock() {
@@ -11,12 +21,19 @@ function updateClock() {
     let hours = now.getHours();
     let minutes = now.getMinutes();
     let seconds = now.getSeconds();
+    let ampm = ""; //Hold Am or Pm
+
+    if (!is2Hour) {
+        ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+    }
 
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10? "0" + minutes : minutes;
     seconds = seconds < 10? "0" + seconds : seconds;
 
-    const timeString = `${hours}:${minutes}:${seconds}`;
+    const timeString = `${hours}:${minutes}:${seconds}${ampm}`;
 
     document.getElementById("clock-display").innerText = timeString;
     const tick = document.getElementById("tick-sound");

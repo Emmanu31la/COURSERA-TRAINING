@@ -40,3 +40,9 @@ body{
 #mute-btn:hover{
     background-color: #ff1493;
 }
+
+#format-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    
+}
