@@ -24,3 +24,16 @@ body{
     font-weight: bold; /*1rem = 16px.makes your clock more accessible for people who change their browser's default text size!*/
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+#mute-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #ff69b4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
