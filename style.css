@@ -44,5 +44,16 @@ body{
 #format-btn{
     margin-top: 20px;
     padding: 10px 20px;
-    
+    background-color: #ff55aa;
+    color: #ffd3ea;
+    border: 3px solid rgb(255, 181, 206);
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#format-btn:hover{
+    transform: scale(1.1);
+    background-color: #8f034d;
 }
