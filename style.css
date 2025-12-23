@@ -10,12 +10,23 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+}
 .clock-container{
     background-color: #ff1493;
-    padding: 3rem 4rem;
+    padding: 1rem 4rem;
     border-radius: 50px;
     box-shadow: 0 15px 35px rgba(90, 14, 61, 0.4);
     border: 8px solid white;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
 }
 
 #clock-display {
@@ -26,7 +37,7 @@ body{
 }
 
 #mute-btn{
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid white;
@@ -35,25 +46,28 @@ body{
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;
+    font-size: large;
 }
 
 #mute-btn:hover{
     background-color: #ff1493;
+    transform:scale(1.1);
 }
 
 #format-btn{
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 10px 20px;
-    background-color: #ff55aa;
-    color: #ffd3ea;
-    border: 3px solid rgb(255, 181, 206);
+    background-color: #ff69b4;
+    color: #ffffff;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;
+    font-size: large;
 }
 
 #format-btn:hover{
     transform: scale(1.1);
-    background-color: #8f034d;
+    background-color: #ff1389;
 }
