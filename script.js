@@ -48,3 +48,20 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
+const themeSelect = document.getElementById('theme-select');
+
+//this object stores al color math for each theme
+const themes = {
+    pink: {
+        '--bg-color': '#ffdae9',
+        '---dot-color': '#ffb6c1',
+        '--container-tag': '#ff1493',
+        'button-tag': '#ff69b4'
+    },
+    blue: {
+        '--bg-color': '#e0f7fa',
+        '--dot-color': '#b2ebf2',
+        '--container-tag': '#00bcd4',
+        '--button-bg': '#4dd0e1'
+    },
+};
