@@ -1,6 +1,14 @@
+:root {
+    --bg-color: #ffdae9;
+    --dot-color: #ffb6c1;
+    --container-bg: #ff1493;
+    --button-bg: #ff69b4;
+    --text-color: #ffffff;
+}
+
 body{
-    background-color: #ffdae9;
-    background-image: radial-gradient(#ffb6c1 4px, transparent 3px);
+    background-color: var(--bg-color);
+    background-image: radial-gradient(var(--dot-color) 4px, transparent 3px);
     background-size: 30px 30px;
     display: flex;
     justify-content: center;
