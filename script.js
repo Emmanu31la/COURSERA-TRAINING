@@ -56,7 +56,7 @@ const themes = {
         '--bg-color': '#ffdae9',
         '---dot-color': '#ffb6c1',
         '--container-tag': '#ff1493',
-        'button-tag': '#ff69b4'
+        '--button-bg': '#ff69b4'
     },
     blue: {
         '--bg-color': '#e0f7fa',
@@ -64,4 +64,32 @@ const themes = {
         '--container-tag': '#00bcd4',
         '--button-bg': '#4dd0e1'
     },
+    black: {
+        '--bg-color': '#1a1a1a',
+        '--dot-color': '#333333',
+        '--container-bg': '#000000',
+        '--button-bg': '#444444'
+    },
+    red: {
+        '--bg-color': '#ffebee',
+        '--dot-color': '#ffcdd2',
+        '--container-bg': '#d32f2f',
+        '--button-bg': '#f44336'
+    },
+    purple: {
+        '--bg-color': '#f3e5f5',
+        '--dot-color': '#e1bee7',
+        '--container-bg': '#6a1b9a',
+        '--button-bg': '#9c27b0'
+    },
 };
+
+themeSelect.addEventListener('change', (e) => {
+    const selectedTheme = e.target.value;
+    const colors = themes[selectedTheme];
+
+    // Loop through each color in the theme and update the CSS Variables
+    for (const variable in colors) {
+        document.documentElement.style.setProperty(variable, colors[variable]);
+    }
+});
