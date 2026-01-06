@@ -55,7 +55,7 @@ const themes = {
     pink: {
         '--bg-color': '#ffdae9',
         '--dot-color': '#ffb6c1',
-        '--container-tag': '#ff1493',
+        '--container-bg': '#ff1493',
         '--button-bg': '#ff69b4'
     },
     blue: {
