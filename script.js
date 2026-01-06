@@ -59,7 +59,9 @@ const themes = {
         '--button-bg': '#ff69b4',
         '--text-color': '#ffffffff',
         '--mute-bg-color': '#ff69b4',
-        '--mute-btn-hover-bg': '#ff1493'
+        '--mute-btn-hover-bg': '#ff1493',
+        '--format-btn-bg': '#ff69b4',
+        '--format-btn-hover-bg': '#ff1389'
     },
     blue: {
         '--bg-color': '#e0f7fa',
@@ -68,7 +70,9 @@ const themes = {
         '--button-bg': '#4dd0e1',
         '--text-color': '#a3f0ffff',
         '--mute-bg-color': '#4dd0e1',
-        '--mute-btn-hover-bg': '#0793a5ff'
+        '--mute-btn-hover-bg': '#0793a5ff',
+        '--format-btn-bg': '#4dd0e1',
+        '--format-btn-hover-bg': '#0793a5ff'
     },
     black: {
         '--bg-color': '#1a1a1a',
@@ -77,7 +81,9 @@ const themes = {
         '--button-bg': '#444444',
         '--text-color': '#ebebebff',
         '--mute-bg-color': '#444444',
-        '--mute-btn-hover-bg': '#222222'
+        '--mute-btn-hover-bg': '#222222',
+        '--format-btn-bg': '#444444',
+        '--format-btn-hover-bg': '#222222'
     },
     red: {
         '--bg-color': '#fd415dff',
@@ -86,7 +92,9 @@ const themes = {
         '--button-bg': '#f44336',
         '--text-color': '#ffc3c3ff',
         '--mute-bg-color': '#f44336',
-        '--mute-btn-hover-bg': '#b71c1cff'
+        '--mute-btn-hover-bg': '#b71c1cff',
+        '--format-btn-bg': '#f44336',
+        '--format-btn-hover-bg': '#b91e1eff'
     },
     purple: {
         '--bg-color': '#e984f8ff',
@@ -95,7 +103,9 @@ const themes = {
         '--button-bg': '#9c27b0',
         '--text-color': '#d2bbfdff',
         '--mute-bg-color': '#9c27b0',
-        '--mute-btn-hover-bg': '#4a148cff'
+        '--mute-btn-hover-bg': '#4a148cff',
+        '--format-btn-bg': '#9c27b0',
+        '--format-btn-hover-bg': '#6a1b9aff'
     },
 };
 

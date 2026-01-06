@@ -6,6 +6,8 @@
     --text-color: #ffffff;
     --mute-bg-color: #ff69b4;
     --mute-btn-hover-bg: #ff1493;
+    --format-btn-bg: #ff69b4;
+    --format-btn-hover-bg: #ff1389;
 }
 
 body{
@@ -67,7 +69,7 @@ body{
 #format-btn{
     margin-top: 0px;
     padding: 10px 20px;
-    background-color: #ff69b4;
+    background-color: var(--format-btn-bg);
     color: #ffffff;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 20px;
@@ -79,7 +81,7 @@ body{
 
 #format-btn:hover{
     transform: scale(1.1);
-    background-color: #ff1389;
+    background-color: var(--format-btn-hover-bg);
 }
 
 .theme-menu {
