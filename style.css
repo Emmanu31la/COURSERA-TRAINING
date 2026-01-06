@@ -1,9 +1,11 @@
 :root {
-    --bg-color: #ffdae9;
-    --dot-color: #ffb6c1;
+    --bg-color: #ff46a9;
+    --dot-color: #ffa0d7;
     --container-bg: #ff1493;
     --button-bg: #ff69b4;
     --text-color: #ffffff;
+    --mute-bg-color: #ff69b4;
+    --mute-btn-hover-bg: #ff1493;
 }
 
 body{
@@ -38,7 +40,7 @@ body{
 }
 
 #clock-display {
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-size: 7rem; 
     font-weight: bold; /*1rem = 16px.makes your clock more accessible for people who change their browser's default text size!*/
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -49,7 +51,7 @@ body{
     padding: 10px 20px;
     border-radius: 20px;
     border: 2px solid white;
-    background-color: #ff69b4;
+    background-color: var(--mute-bg-color);
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -58,7 +60,7 @@ body{
 }
 
 #mute-btn:hover{
-    background-color: #ff1493;
+    background-color: var(--mute-btn-hover-bg);
     transform:scale(1.1);
 }
 
