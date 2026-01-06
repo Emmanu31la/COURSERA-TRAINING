@@ -54,14 +54,14 @@ const themeSelect = document.getElementById('theme-select');
 const themes = {
     pink: {
         '--bg-color': '#ffdae9',
-        '---dot-color': '#ffb6c1',
+        '--dot-color': '#ffb6c1',
         '--container-tag': '#ff1493',
         '--button-bg': '#ff69b4'
     },
     blue: {
         '--bg-color': '#e0f7fa',
         '--dot-color': '#b2ebf2',
-        '--container-tag': '#00bcd4',
+        '--container-bg': '#00bcd4',
         '--button-bg': '#4dd0e1'
     },
     black: {
@@ -71,8 +71,8 @@ const themes = {
         '--button-bg': '#444444'
     },
     red: {
-        '--bg-color': '#ffebee',
-        '--dot-color': '#ffcdd2',
+        '--bg-color': '#fd415dff',
+        '--dot-color': '#c5081bff',
         '--container-bg': '#d32f2f',
         '--button-bg': '#f44336'
     },
