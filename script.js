@@ -66,6 +66,7 @@ const muteBtn = document.getElementById("mute-btn");
 const formatBtn = document.getElementById("format-btn");
 const themeSelect = document.getElementById('theme-select');
 const tick = document.getElementById("tick-sound");
+const clockDisplay = document.getElementById("clock-display");
 
 // 4. Helper Function: Apply Theme
 // We put this here so both the dropdown and the page-load can use it
@@ -95,7 +96,8 @@ function updateClock() {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    document.getElementById("clock-display").innerText = `${hours}:${minutes}:${seconds}${ampm}`;
+    const timeString = `${hours}:${minutes}:${seconds}<span class="ampm">${ampm}</span>`;
+    clockDisplay.innerHTML = timeString;
 
     if (!isMuted) {
         tick.currentTime = 0;
